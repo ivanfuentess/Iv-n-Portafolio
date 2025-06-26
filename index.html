@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Único - Inspirado en Grandes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo-area">
+        <div class="logo">Ivan Fuentes</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+    <div class="hero-bg-animated">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+    </div>
+    <div class="hero-content">
+      <h1><span class="gradient-text">Bienvenido a mi universo digital</span></h1>
+      <p>Inspirado en la innovación de Netflix, Google, Amazon y Facebook</p>
+      <button class="cta-btn" onclick="scrollToSection('projects')">Ver Proyectos</button>
+    </div>
+  </header>
+  <section id="about" class="about">
+    <h2>Sobre mí</h2>
+    <p>Soy un desarrollador apasionado por crear experiencias digitales únicas, fusionando creatividad y tecnología para transformar ideas en realidades impactantes.</p>
+  </section>
+  <section id="projects" class="projects">
+    <h2>Proyectos Destacados</h2>
+    <div class="project-cards">
+      <div class="project-card netflix">
+        <img src="https://assets.brand.microsites.netflix.io/assets/2d2e7e2e-7e2e-11e9-8f9e-066b49664af6_cm_800w.png?v=1" alt="Netflix Style">
+        <h3>Clon de Netflix</h3>
+        <p>Una plataforma de streaming con UI inspirada en Netflix, usando React y Firebase.</p>
+      </div>
+      <div class="project-card google">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png" alt="Google Style">
+        <h3>Buscador Inteligente</h3>
+        <p>Motor de búsqueda personalizado con IA, inspirado en la simplicidad de Google.</p>
+      </div>
+      <div class="project-card amazon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Style">
+        <h3>E-commerce Futurista</h3>
+        <p>Tienda online con recomendaciones inteligentes y UX tipo Amazon.</p>
+      </div>
+      <div class="project-card facebook">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Style">
+        <h3>Red Social Moderna</h3>
+        <p>Plataforma social con diseño y funcionalidades inspiradas en Facebook.</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="skills">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>JavaScript / TypeScript</li>
+      <li>React / Next.js</li>
+      <li>Node.js / Express</li>
+      <li>Firebase / MongoDB</li>
+      <li>UI/UX Design</li>
+      <li>Machine Learning</li>
+    </ul>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu email" required>
+      <textarea name="message" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="formMessage"></div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Ivan Fuentes. Inspirado en los grandes.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
